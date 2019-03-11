@@ -1,0 +1,25 @@
+#root {
+  text-align: center;
+}
+
+.carousel {
+  border: 2px solid #0e0e0f;
+}
+
+.carousel-caption {
+  background: #b86363;
+  border-radius: 20px;
+}
+
+.name {
+  padding-top: 35vh;
+  padding-bottom: 35vh;
+  background-color: #F0F7EE;
+  font-size: 2em;
+}
+
+.carousel-container {
+  padding-top: 5vh;
+  background-color: #AFDEDC !important;
+  padding-bottom: 5vh;
+}
