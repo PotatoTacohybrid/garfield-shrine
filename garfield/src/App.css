@@ -2,12 +2,18 @@
   text-align: center;
 }
 
+h2 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-bottom: 1px solid black;
+}
+
 .carousel {
   border: 2px solid #0e0e0f;
 }
 
 .carousel-caption {
-  background: #b86363;
+  background: #776871;
   border-radius: 20px;
 }
 
@@ -20,6 +26,18 @@
 
 .carousel-container {
   padding-top: 5vh;
-  background-color: #AFDEDC !important;
+  background-color: #AFDEDC;
   padding-bottom: 5vh;
+}
+
+.media {
+  min-height: 50vh;
+  background-color: #C4D7F2;
+  padding-top: 15vh;
+  justify-content: center;
+}
+
+.media-content-container {
+  display: inline-block;
+
 }
