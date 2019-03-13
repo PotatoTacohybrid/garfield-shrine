@@ -3,11 +3,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
-import ScrollAnimation from 'react-animate-on-scroll';
 import Fade from 'react-reveal/Fade';
 
-class MainCarousel extends Component {
-  render() {
+const MainCarousel = () => {
     return (
       <div className="carousel-container">
       <Carousel>
@@ -35,42 +33,49 @@ class MainCarousel extends Component {
           </Carousel>
         </div>
     )
-  }
 }
 
-class CarouselArea extends Component {
-  render() {
-    return (
-      <Fade>
-        <div className="carousel-container">
-          <Container>
-            <h2>Here are said web things</h2>
-            <MainCarousel />
-          </Container>
-        </div>
-      </Fade>
-    )
-  }
+const CarouselArea = () => {
+  return (
+    <Fade>
+      <div className="carousel-container">
+        <Container>
+          <h2>Here are said web things</h2>
+          <MainCarousel />
+        </Container>
+      </div>
+    </Fade>
+  )
 }
 
-class Name extends Component {
-  render() {
-    return (
-      <Fade><div className="name">I do web things</div></Fade>
-    )
-  }
+const Name = () => {
+  return (
+    <Fade><div className="name">I do web things</div></Fade>
+  )
 }
 
-class Media extends Component {
-  render() {
-    return (
+const Media = () => {
+    return ( 
       <Fade>
         <div className="media">
-          <h2>Find me at none of these</h2>
+          <Container>
+            <h2>Find me at none of these</h2>
+            <Circle text="Twitter" link="https://www.youtube.com/watch?v=AfIOBLr1NDU"/>
+            <Circle text="Instagram" link="https://www.youtube.com/watch?v=jAT5rNkmGWg"/>
+            <Circle text="Funeral" link="https://www.youtube.com/watch?v=NHEaYbDWyQE"/>
+            <Circle text="???" link="https://www.youtube.com/watch?v=XEbhjrGyKuE"/>
+
+          </Container>
         </div>
+
       </Fade>
     )
-  }
+}
+
+const Circle = (props) => {
+  return (
+    <a href={props.link} target="_blank"><div className="circle">{props.text}</div></a>
+  )
 }
 
 class App extends Component {
