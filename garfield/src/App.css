@@ -34,11 +34,22 @@ h2 {
   min-height: 50vh;
   background-color: #C4D7F2;
   padding-top: 15vh;
-
   justify-content: center;
 }
 
-.media-content-container {
-  display: inline-block;
 
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #776871;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 10vh;
+  margin-left: 8vh;
+  margin-right: 8vh;
+  line-height: 100px;
+  color: white;
+  font-size: 1em;
 }
