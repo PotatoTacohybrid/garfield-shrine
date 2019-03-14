@@ -60,7 +60,7 @@ const Media = () => {
         <div className="media">
           <Container>
             <h2>Find me at none of these</h2>
-            <Circle text="Twitter" link="https://www.youtube.com/watch?v=AfIOBLr1NDU"/>
+            <Circle text="Twitter" link="https://www.youtube.com/watch?v=iIsv7MnZ7-0"/>
             <Circle text="Instagram" link="https://www.youtube.com/watch?v=jAT5rNkmGWg"/>
             <Circle text="Funeral" link="https://www.youtube.com/watch?v=NHEaYbDWyQE"/>
             <Circle text="???" link="https://www.youtube.com/watch?v=XEbhjrGyKuE"/>
