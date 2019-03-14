@@ -37,27 +37,28 @@ const MainCarousel = () => {
 
 const CarouselArea = () => {
   return (
-    <Fade>
       <div className="carousel-container">
-        <Container>
-          <h2>Here are said web things</h2>
-          <MainCarousel />
-        </Container>
+        <Fade>
+          <Container>
+            <h2>Here are said web things</h2>
+            <MainCarousel />
+          </Container>
+        </Fade>
       </div>
-    </Fade>
+
   )
 }
 
-const Name = () => {
+const NameArea = () => {
   return (
-    <Fade><div className="name">I do web things</div></Fade>
+    <Fade><div className="name-area">I do web things</div></Fade>
   )
 }
 
-const Media = () => {
+const MediaArea = () => {
     return ( 
-      <Fade>
-        <div className="media">
+        <div className="media-area">
+        <Fade right>
           <Container>
             <h2>Find me at none of these</h2>
             <Circle text="Twitter" link="https://www.youtube.com/watch?v=iIsv7MnZ7-0"/>
@@ -66,9 +67,9 @@ const Media = () => {
             <Circle text="???" link="https://www.youtube.com/watch?v=XEbhjrGyKuE"/>
 
           </Container>
+          </Fade>
         </div>
 
-      </Fade>
     )
 }
 
@@ -82,9 +83,9 @@ class App extends Component {
   render() {
     return (
         <div>
-          <Name />
+          <NameArea />
           <CarouselArea />
-          <Media />
+          <MediaArea />
         </div>
     );
   }
