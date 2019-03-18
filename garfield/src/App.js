@@ -10,25 +10,28 @@ const MainCarousel = () => {
       <div className="carousel-container">
       <Carousel>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={require("./photos/img1.PNG")}
-                alt="First slide"
-              />
-              <Carousel.Caption>
-                <h3>Terrible original ideas</h3>
-              </Carousel.Caption>
+              <a href="https://longestgarfield.herokuapp.com" target="_blank">
+                <img
+                  className="d-block w-100"
+                  src={require("./photos/img1.PNG")}
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  <h3>Terrible original ideas</h3>
+                </Carousel.Caption>
+              </a>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={require("./photos/img2.PNG")}
-                alt="Third slide"
-              />
-
-              <Carousel.Caption>
-                <h3>And even worse 'practical' ideas</h3>
-              </Carousel.Caption>
+              <a href="https://air-pollution.herokuapp.com" target="_blank">
+                <img
+                  className="d-block w-100"
+                  src={require("./photos/img2.PNG")}
+                  alt="Third slide"
+                />  
+                <Carousel.Caption>
+                  <h3>And even worse 'practical' ideas</h3>
+                </Carousel.Caption>
+              </a>  
             </Carousel.Item>
           </Carousel>
         </div>
